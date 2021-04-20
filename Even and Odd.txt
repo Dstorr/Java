@@ -1,0 +1,36 @@
+ //Declaration
+import java.util.Scanner;
+
+class HelloWorld6 {
+  
+  public static void main(String[] args) 
+{
+                      
+    //Variable
+    int num;
+    
+    //Print Out
+    System.out.println("Give me a mystical number ");
+
+    //Number
+    Scanner kb = new Scanner(System.in);
+    num = kb.nextInt();
+
+    //line
+    System.out.println("-------------------");
+    
+    // If the number is divisible by 2 then it's an even number
+    // If it isn't then it's an odd number
+    if ( num % 2 == 0 )
+    
+       System.out.println("Your number is even");
+    
+     else
+       
+       System.out.println("Your number is odd");
+    
+     //line
+    System.out.println("-------------------");
+    
+  }
+}

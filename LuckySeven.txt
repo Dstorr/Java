@@ -1,0 +1,51 @@
+//Decalration
+import java.util.Random;
+import java.util.Scanner;
+
+public class LSeven {
+    public static void main(String[] args) {
+     
+    //Lucky Seven
+
+    System.out.println("Lucky Seven");
+
+    
+    //Random and Scanner
+    Random rnd = new Random();
+    Scanner kb = new Scanner(System.in);
+    
+    //Variables
+    int dice1 = rnd.nextInt(6) + 1;
+    int dice2 = rnd.nextInt(6) + 1;
+    int addition = dice1 + dice2;
+    
+    //What is the user's name
+    System.out.print("What is your name? ");
+    String userName = kb.nextLine();
+    
+    
+    System.out.println(dice1 + " + " + dice2 + " = " + addition);
+    
+
+    if ( addition == 7 )
+    {
+        System.out.println(userName + ", your number is 7, so you win");
+    }
+            
+    else if( addition > 7) 
+    {
+       System.out.println(userName + ", your number was greater than 7, so you lose ");
+    }
+    else if ( addition < 7 ) 
+    {
+        System.out.println(userName + ", your number was lower than 7,so you lose ");
+    }
+
+    
+ 
+    System.out.println("Do you want to play a game " + userName + "?(Y/N)");
+   
+    
+    }
+    
+}

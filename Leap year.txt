@@ -1,0 +1,38 @@
+//Declaration
+import java.util.Scanner;
+
+class HelloWorld5 {
+  public static void main(String[] args) {
+       
+      //Scanner
+      Scanner input = new Scanner(System.in);
+        
+      //Print Out
+      System.out.println("Enter a year:");
+
+      //Variable
+      int year = input.nextInt();
+      boolean leap = false;
+        
+       //If statement
+        if( year % 4 == 0)
+        {
+            if( year % 100 == 0)
+            {
+               // this year is divisble by 400, so it's a leap year
+                if ( year % 400 == 0)
+                    leap = true;
+                else
+                    leap = false;
+            }
+            else
+                leap = true;
+        }
+        else
+            leap = false;
+        if(leap)
+            System.out.println(year + " is a leap year. ");
+        else
+            System.out.println(year + " is not a leap year. ");
+    }
+} 
