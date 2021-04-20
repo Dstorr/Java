@@ -1,0 +1,74 @@
+   //Declaration
+    import java.util.Scanner;
+    import java.util.Random;
+	 class HelloWorld {
+    public static void main(String[] args) {
+
+    //Homework
+    //Scanner
+    Scanner kb = new Scanner(System.in);
+    Random rnd = new Random();
+    
+    //variable
+    int hand1 = rnd.nextInt(2);
+    int user;
+    
+    int Rock = 0;
+    int Paper = 1;
+    int Scissors = 2; 
+    
+     //Description
+     System.out.println("These are your choices: 0 = Rock; 1 = Paper; 2 = Scissors");
+  
+    //Computer
+    System.out.println("Computer Chooses: ");
+ 
+    //Computer
+     switch(hand1)
+            {
+                case 0:
+                    System.out.println("Rock");
+                break;
+                case 1:
+                    System.out.println("Paper");
+                break;
+                case 2:
+                     System.out.println("Scissors");
+                break;
+            }
+      
+    //Input
+     System.out.print("User Chooses: ");
+     user = kb.nextInt();
+     
+    //Player 2
+    switch(user)
+            {
+               case 0:
+                    System.out.println("Rock");
+                break;
+                case 1:
+                    System.out.println("Paper");
+                break;
+                case 2:
+                     System.out.println("Scissors");
+                break;
+            }
+    
+
+    //If statement
+    if ( hand1 == user )
+    {
+      System.out.println("This is a Tie");
+    }
+    
+    else if (hand1 < 2 )        
+    {
+     System.out.println("User wins");
+    }
+    else if (hand1 < 3)
+    {
+        System.out.println("User Wins");
+    }
+  }
+ }

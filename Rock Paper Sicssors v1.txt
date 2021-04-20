@@ -1,0 +1,99 @@
+//Declaration
+import java.util.Scanner;
+import java.util.Random;
+
+class HelloWorld4 {
+  public static void main(String[] args) {
+    
+ 	// Title 
+    System.out.println("Rock Paper Scissors Game");
+    
+    //Homework
+    //Scanner
+    Scanner kb = new Scanner(System.in);
+    Random rnd = new Random();
+    
+    //variable
+    int hand1 = rnd.nextInt(3) + 1;
+    int hand2 = rnd.nextInt(3) + 1;
+    
+   /* int Rock = 1;
+    int Paper = 2;
+    int Scissors = 3; */
+    
+    //Line and Round One 
+    System.out.println("-----------");
+    System.out.println("|ROUND ONE|");
+    System.out.println("-----------");
+    
+    //Player One
+    System.out.println("Player ONE:");
+    
+    System.out.println(hand1);
+    
+    //Switch for Player ONE
+     switch(hand1)
+            {
+                case 1:
+                    System.out.println("Rock");
+                break;
+                case 2:
+                    System.out.println("Paper");
+                break;
+                case 3:
+                     System.out.println("Scissors");
+                break;
+            }
+ 
+    
+  
+    //Line  
+    System.out.println("---------");
+    
+    //Player TWO
+    System.out.println("Player TWO:");
+    System.out.println(hand2);
+    //Player  TWO
+    
+    //Switch for PLAYER TWO
+     switch(hand2)
+            {
+               case 1:
+                    System.out.println("Rock");
+                break;
+                case 2:
+                    System.out.println("Paper");
+                break;
+                case 3:
+                     System.out.println("Scissors");
+                break;
+            }
+     
+     //Line
+    System.out.println("---------");
+    
+    //If statement
+    if ( hand1 == hand2 )
+    {
+      System.out.println("This is a Tie");
+    }
+    
+   /* else if (hand1 >= 2 || hand1 > hand2)        
+    {
+     System.out.println( hand1 + " beats " + hand2);
+    } */
+    
+    else if (hand2 > hand1 )
+    {
+        System.out.println("Player TWO Wins");
+    }
+    else if (hand1 > hand2)
+    {
+      System.out.println("Player ONE Wins");
+    }
+    
+     //Line
+    System.out.println("---------");
+
+  }
+}
