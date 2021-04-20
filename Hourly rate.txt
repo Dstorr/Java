@@ -1,0 +1,40 @@
+   import java.util.Scanner;
+    public class HelloWorld {
+
+    public static void main(String[] args) {
+
+    //Varuables
+    int regularHours, overHours;
+    double hourlyRate;
+    
+    //Scanner
+    Scanner kb = new Scanner(System.in);
+    
+    //Questions
+    System.out.print("What is your hourly rate? ");
+    hourlyRate = kb.nextDouble();
+    
+    System.out.print("How many regular hours do you work? ");
+    regularHours = kb.nextInt();
+    
+    System.out.print("How many overtime hours do you work? ");
+    overHours = kb.nextInt();
+    
+    //Calculation
+    double regPay = hourlyRate * regularHours;
+    double overPay = hourlyRate * 1.5 * overHours;
+    double totalPay = regPay + overPay;
+    
+    //Line
+    System.out.println("------------------------");
+
+    //Display
+    System.out.println("| " + "Regular Pay: " + regPay + "     |");
+    System.out.println("| " + "Overtime pay: " + overPay + "    |");
+    System.out.println("| " + "Total: " + totalPay + "           |");
+
+    //Line
+    System.out.println("------------------------");
+
+   }
+}

@@ -1,0 +1,45 @@
+//Declaration
+import java.util.Random;
+import java.util.Scanner;
+
+class HelloWorld2 {
+  public static void main(String[] args) {
+    
+ //Scanner, Random 
+    Scanner kb = new Scanner(System.in);
+    Random rnd = new Random();
+    
+    //Variable count for heads and tails
+    int totalHeads = 0;
+    int totalTails = 1;
+    
+    
+	//0=heads 1=Tails
+    for (int count=1;count<=10;count++)
+            {
+                    int coinToss = rnd.nextInt(2);
+    	switch (coinToss)
+     		{
+      			case 0:
+        		      System.out.println("HEADS");
+                              totalHeads++;
+          		    break;
+      			case 1:
+       			      System.out.println("TAILS");
+                              totalTails++;
+      	  		    break;
+     		 }
+            }
+    
+    System.out.println("----------------------------");
+    
+    //Display total number of heads
+    System.out.println("| Total number of heads: " + totalHeads + " |");
+     
+    //Display total number of tails
+    System.out.println("| Total number of tails: " + totalTails + " |" );
+    
+    System.out.println("----------------------------");
+   
+  }
+}

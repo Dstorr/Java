@@ -1,0 +1,66 @@
+ //Declaration 
+ import java.util.Scanner;
+
+class HelloWorld5 {
+  public static void main(String[] args) {
+                    //  2/3/2020
+                   //Denrick Storr
+    //Variables
+    int num1;
+    int num2;
+    int num3;
+    
+    int add;
+    
+    int division;
+    
+    int avg = 90;
+
+    //Scanner
+    Scanner kb = new Scanner(System.in);
+    
+    //Outprint of Numbers
+    System.out.print("This is your First number: ");
+    num1 = kb.nextInt();
+    
+    System.out.print("This is your Second number: ");
+    num2 = kb.nextInt();
+    
+    System.out.print("This is your Third number: ");
+    num3 = kb.nextInt();
+    
+    //addition
+    add = num1 + num2 + num3;
+    
+    //division
+    division = add/3;
+    
+    //average
+    avg = division;
+    
+    //Outprint of addition
+    System.out.println("This is your addition: " + add);
+    
+    //Outprint division
+    System.out.println("This is your division: " + division);
+    
+    // Average printout
+    System.out.println("The Average is " + avg);
+       
+    //line
+    System.out.println("--------------------------------");
+    
+    //If statement
+    if (avg > 90 )
+    {
+      System.out.println("Great, you did Briliantly!");
+    }
+    else if (avg < 90 )
+    {
+      System.out.println("Sorry, not the number we wanted");
+    }
+    
+    //line
+    System.out.println("--------------------------------");
+  }
+}

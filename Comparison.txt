@@ -1,0 +1,21 @@
+import java.util.Scanner; 
+
+class HelloWorld5 {
+  public static void main(String[] args) 
+  {
+    
+    //Scanner
+    Scanner kb = new Scanner(System.in);
+    
+    //Ask question
+    System.out.print("What is your word of choice? ");
+    String s1 = kb.nextLine();
+    
+    System.out.print("What is your next word of choice? ");
+    String s2 = kb.nextLine();
+    
+   	//Print out of the Comparison(True/false)
+    System.out.println("This is " + s1.equals(s2));
+        
+  }
+}

@@ -1,0 +1,17 @@
+public static void main (String[] args) throws IOException 
+{
+  //Create instance of FileWriter object (so we can append data)
+   FileWriter myFile = new FileWriter("myFriends.txt", true);
+
+  //Create instance of PrintWriter object (to use print and println)
+  PrintWriter outputFile = new PrintWriter(myFile);
+
+  //Write data to the file
+  outputFile.println("David");
+  outputFile.println("Sandy");
+  outputFile.println("Lisa");
+
+  //Close the file
+  outputFile.close();
+
+}

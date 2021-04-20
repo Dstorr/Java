@@ -1,0 +1,21 @@
+
+class week3 {
+  public static void main(String[] args) {
+    
+   //Create an integer array of 5 elements
+    int[] array1 = {5, 8, 3, 4, 9};
+    
+    //Create a new array of (of the same size)
+    int[] array2 = new int[array1.length];
+    
+    //copy the contents of the array into the new array
+    for (int count=0;count<array1.length;count++)
+    {
+     System.out.print(array1[count]);
+      
+    //Assign each element to newArray
+     array2[count] = array1[count];
+    } 
+    
+  }
+}

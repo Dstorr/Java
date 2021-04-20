@@ -1,0 +1,31 @@
+
+  import java.util.Scanner;
+
+public class JavaApplication1 {
+
+
+    
+    
+    public static void main(String[] args) {
+        
+          //Scanner
+    Scanner kb = new Scanner(System.in);
+    
+        //Questions
+    System.out.print("What is your first name? ");
+    String firstName = kb.nextLine();
+    
+    System.out.print("What is your last name? ");
+    String lastName = kb.nextLine();
+    
+	//variables
+    char firstInital = firstName.charAt(0);
+    char lastInital = lastName.charAt(0);
+    
+  	//Display initals
+    System.out.println(firstInital);
+    System.out.println(lastInital);
+    
+    }
+    
+}

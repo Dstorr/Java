@@ -1,0 +1,11 @@
+import java.util.Random;
+class HelloWorld8 {
+  public static void main(String[] args) {
+    
+   
+  	Random rnd = new Random();
+    int coinToss = rnd.nextInt(2);
+    System.out.println(coinToss);
+    
+  }
+}

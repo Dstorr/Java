@@ -1,0 +1,20 @@
+//Declaration
+import java.util.Scanner;
+class HelloWorld {
+  public static void main(String[] args) {
+    
+    //Scanner
+    Scanner kb = new Scanner(System.in);
+    
+    //Statement
+    System.out.print("How many greetings? ");
+    int numberOfTimes = kb.nextInt();
+    
+    //Count
+    for (int count=1;count<=numberOfTimes ;count++)
+    {  
+        System.out.println("Hello!");
+    }
+
+  }
+} 
